@@ -5,33 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <header>
-    <nav>
-      <a href="./index.html">WebStudio</a>
-
-      <ul>
-        <li><a href="">Studio</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contacts</a></li>
-      </ul>
-    </nav>
-
-    <address>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-      </ul>
-    </address>
-  </header>
-
   <body>
-    <main></main>
+    <header class="top-line">
+      <nav class="site-nav">
+        <a href="./index.html" class="logo"><span>WEB</span>STUDIO</a>
+
+        <ul class="site-nav list">
+          <li class="site-nav item">
+            <a href="./index.html" class="link">Studio</a>
+          </li>
+          <li class="site-nav item">
+            <a href="./portfolio.html" class="link current">Portfolio</a>
+          </li>
+          <li class="site-nav item"><a href="" class="link">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <address class="address">
+        <ul class="list">
+          <li class="list-item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="list-item">
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </header>
+
+    <main>
+      <section>
+        <h1 hidden class="Portfolio">Portfolio</h1>
+        <ul class="filter-list list">
+          <li><button type="button" class="button">All</button></li>
+          <li><button type="button" class="button">Web Site</button></li>
+          <li><button type="button" class="button">App</button></li>
+          <li><button type="button" class="button">Design</button></li>
+          <li><button type="button" class="button">Marketing</button></li>
+        </ul>
+        <h2 hidden>Our Work</h2>
+        <ul class="list">
+          <li class="list-item">
+            <img src="./images/1.jpg" alt="" width="360" />
+            <h3 class="list-title">Banking App Interface Concept</h3>
+            <p>App</p>
+          </li>
+          <li class="list-item">
+            <img src="./images/2.jpg" alt="" width="360" />
+            <h3 class="list-title">Cashless Payment</h3>
+            <p>Marketing</p>
+          </li>
+          <li class="list-item">
+            <img src="./images/3.jpg" alt="" width="360" />
+            <h3 class="list-title">Meditation App</h3>
+            <p>App</p>
+          </li>
+          <li class="list-item">
+            <img src="./images/4.jpg" alt="" width="360" />
+            <h3 class="list-title">Taxi Service</h3>
+            <p>Marketing</p>
+          </li>
+          <li class="list-item">
+            <img src="./images/5.jpg" alt="" width="360" />
+            <h3 class="list-title">Screen Illustrations</h3>
+            <p>Design</p>
+          </li>
+          <li class="list-item">
+            <img src="./images/6.jpg" alt="" width="360" />
+            <h3 class="list-title">Online Courses</h3>
+            <p>Marketing</p>
+          </li>
+          <li class="list-item">
+            <img src="./images/7.jpg" alt="" width="360" />
+            <h3 class="list-title">Instagram Stories Concept</h3>
+            <p>Design</p>
+          </li>
+          <li class="list-item">
+            <img src="./images/8.jpg" alt="" width="360" />
+            <h3 class="list-title">Organic Food</h3>
+            <p>Web Site</p>
+          </li>
+          <li class="list-item">
+            <img src="./images/9.jpg" alt="" width="360" />
+            <h3 class="list-title">Fresh Coffee</h3>
+            <p>Web Site</p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 
   <footer>
-    <a href="./index.html">WebStudio</a>
+    <a href="./index.html" class="logo"><span>WEB</span>STUDIO</a>
 
     <p>
       Increase the flow of customers and sales for your business with digital
