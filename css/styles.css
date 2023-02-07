@@ -57,6 +57,7 @@ body {
 
 .top-line {
   padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--Footer-text-color);
 }
 
@@ -232,7 +233,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   color: var(--navy-blue-color);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 /* _____OUR TEAM_______ */
 
@@ -274,6 +275,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .our-team-list .text {
@@ -368,15 +370,15 @@ body {
 
 .projects-text-container {
   padding: 32px 16px;
+  border-bottom: 1px solid var(--Footer-text-color);
+  border-right: 1px solid var(--Footer-text-color);
+  border-left: 1px solid var(--Footer-text-color);
 }
 
 .projects-list .list-item {
   margin-right: 24px;
   margin-bottom: 24px;
   width: calc((100% - 48px) / 3);
-  border-bottom: 1px solid var(--Footer-text-color);
-  border-right: 1px solid var(--Footer-text-color);
-  border-left: 1px solid var(--Footer-text-color);
 }
 
 .projects-list .list-item:nth-child(3n) {
