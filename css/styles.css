@@ -9,6 +9,9 @@
   --Primary-Brand: #4d5ae5;
   --Pressed-State: #404bbf;
   --Footer-text-color: #e7e9fc;
+  --Hero-bg-color: rgb(46, 47, 66, 0.7);
+  --Sabtle-Text: #8e8f99;
+  --Success: #31d0aa;
 }
 
 ul {
@@ -47,7 +50,7 @@ body {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -136,6 +139,14 @@ body {
 
 .hero {
   background-color: var(--hero-background);
+  background-image: linear-gradient(
+      to right,
+      var(--Hero-bg-color),
+      var(--Hero-bg-color)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-position: center;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -186,6 +197,20 @@ body {
   align-items: center;
 }
 
+.fetures-icon {
+  fill: currentColor;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+}
+
 .our-advantages-list .list-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -197,6 +222,7 @@ body {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .our-advantages-list .text {
@@ -262,6 +288,8 @@ body {
 
 .our-team .list-item {
   background-color: var(--background-primary-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-text-container {
@@ -270,6 +298,7 @@ body {
 }
 
 .our-team-list .list-title {
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -288,6 +317,81 @@ body {
   text-align: center;
 }
 
+.soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.soc-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.soc-link {
+  background-color: var(--Primary-Brand);
+  fill: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--Pressed-State);
+}
+
+/* ______CUSTOMERS__________ */
+
+.customer-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--navy-blue-color);
+  margin-bottom: 72px;
+}
+
+.customer-list {
+  display: flex;
+  margin-top: 8px;
+  gap: 24px;
+}
+
+.cust-list-item {
+  display: flex;
+
+  width: 168px;
+  height: 88px;
+}
+
+.cust-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--Sabtle-Text);
+  fill: var(--Sabtle-Text);
+}
+
+.cust-link:hover,
+.cust-link:focus {
+  fill: var(--Pressed-State);
+  border: 1px solid var(--Pressed-State);
+}
+
 /* _____FOOTER_____ */
 
 .footer {
@@ -295,6 +399,14 @@ body {
   color: var(--second-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.social-container {
+  margin-left: 120px;
 }
 
 .footer .logo {
@@ -316,6 +428,47 @@ body {
   /* or 150% */
 
   letter-spacing: 0.02em;
+}
+
+.social-title {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-list-item {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--background-primary-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--Success);
+  fill: var(--background-primary-color);
 }
 
 /*HTML page portfolio*/
@@ -345,7 +498,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border: 1px solid var(--Footer-text-color);
+  border: 4px;
   border-radius: 4px;
 }
 
@@ -353,6 +506,8 @@ body {
 .filter-list .button:focus {
   background: var(--Primary-Brand);
   color: var(--second-text-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .projects-container {
@@ -379,6 +534,12 @@ body {
   margin-right: 24px;
   margin-bottom: 24px;
   width: calc((100% - 48px) / 3);
+}
+
+.projects-list .list-item:hover,
+.projects-list .list-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .projects-list .list-item:nth-child(3n) {
