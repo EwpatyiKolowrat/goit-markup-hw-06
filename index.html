@@ -18,7 +18,7 @@
     />
   </head>
 
-  <body>
+  <body class="main-page">
     <header class="top-line">
       <div class="container">
         <nav class="site-nav">
@@ -51,17 +51,29 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-page">
+
       <section class="hero">
-        <div class="container">
+        <div class="hero-container container"> 
           <h1 class="hero-title main-title">
             Effective Solutions <br />
             for Your Business
           </h1>
           <div class="button-text">
-            <button type="button" class="hero-button">Order Service</button>
+            <button type="button"  data-modal-open class="hero-button">Order Service</button>
           </div>
         </div>
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+              <div class="close-button-container">
+                <svg class="close-button" width="24" height="24" data-modal-close>
+                  <use href="./images/symbol-defs5.svg#icon-close" class="hi-fi"></use>
+                </svg>
+              </div>
+          </div>
+        </div>
+
       </section>
 
       <section class="our-advantages section">
@@ -401,5 +413,7 @@
 
       
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
