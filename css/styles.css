@@ -232,7 +232,7 @@ body {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -246,15 +246,37 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.close-button {
+.modal-button {
   position: absolute;
   top: 24px;
   right: 24px;
-  cursor: pointer;
-  background: #e7e9fc;
-  fill: var(--Footer-text-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
+  fill: currentColor;
+  border-color: var(--Footer-text-color);
+  background-color: var(--Footer-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.modal-button :hover,
+.modal-button :focus {
+  background-color: #404bbf;
+  fill: #ffffff;
 }
 
 /* _____OUR ADVANTAGES________ */
@@ -580,9 +602,11 @@ body {
   letter-spacing: 0.04em;
   border: 4px;
   border-radius: 4px;
+  box-shadow: none;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-list .button:hover,
@@ -590,7 +614,6 @@ body {
   background: var(--Primary-Brand);
   color: var(--second-text-color);
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -629,8 +652,8 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list .list-item:hover .projects-overlay,
-.projects-list .list-item:focus .projects-overlay {
+.projects-list .link:hover .projects-overlay,
+.projects-list .link:focus .projects-overlay {
   transform: translateY(0);
 }
 
