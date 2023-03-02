@@ -334,7 +334,8 @@ body {
 }
 
 .form-input:focus {
-  border-color: var(--Pressed-State);
+  outline: none !important;
+  border-color: var(--Primary-Brand);
 }
 
 .form-icon {
@@ -362,12 +363,9 @@ body {
   border-radius: 4px;
 }
 
-.form-textarea:not(:placeholder-shown) {
-  border-color: var(--Pressed-State);
-}
-
 .form-textarea:focus {
-  border-color: var(--Pressed-State);
+  outline: none !important;
+  border-color: var(--Primary-Brand);
 }
 
 .checkbox {
