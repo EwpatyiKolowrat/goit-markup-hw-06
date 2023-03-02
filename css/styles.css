@@ -334,8 +334,7 @@ body {
 }
 
 .form-input:focus {
-  outline: none !important;
-  border-color: var(--Primary-Brand);
+  border-color: var(--Pressed-State);
 }
 
 .form-icon {
@@ -350,6 +349,7 @@ body {
 
 .form-field:focus-within > .form-icon {
   fill: var(--Primary-Brand);
+  border-color: var(--Pressed-State);
 }
 
 .form-textarea {
@@ -362,9 +362,12 @@ body {
   border-radius: 4px;
 }
 
+.form-textarea:not(:placeholder-shown) {
+  border-color: var(--Pressed-State);
+}
+
 .form-textarea:focus {
-  outline: none !important;
-  border-color: var(--Primary-Brand);
+  border-color: var(--Pressed-State);
 }
 
 .checkbox {
