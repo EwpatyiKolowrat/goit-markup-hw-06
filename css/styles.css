@@ -342,9 +342,7 @@ body {
   position: absolute;
   top: 50%;
   left: 16px;
-  transform: translateY(50%);
-  width: 12px;
-  height: 12px;
+  transform: translateY(-10%);
   fill: var(--hero-background);
 }
 
@@ -361,6 +359,16 @@ body {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.form-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  /* identical to box height, or 117% */
+
+  letter-spacing: 0.04em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-textarea:focus {
